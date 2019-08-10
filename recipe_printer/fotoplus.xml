@@ -1,1 +1,149 @@
+<?xml version="1.0"?>
+<PrintOperations xmlns="http://www.software-house.de/PrintOperations">
 
+	<Operation Type="SH.PrintLib.PrintOperations.CSimpleTextPrint">
+		<Text>{HEAD_ORDERNO}{\n}{\n}</Text>
+		<Align>Center</Align>
+		<Font>
+			<Name>Arial</Name>
+			<Size>8</Size>
+			<Style>Bold</Style>
+		</Font>
+	</Operation>
+
+	<Operation Type="SH.PrintLib.PrintOperations.CSimpleTextPrint">
+		<Text>{ID_TERMINAL} / {HEAD_ORDERNO}{\n}{\n} {ORDER_IDFULL}</Text>
+		<Align>Center</Align>
+		<Font>
+			<Name>Arial</Name>
+			<Size>8</Size>
+			<Style>Bold</Style>
+		</Font>
+	</Operation>
+
+	<Operation Type="SH.PrintLib.PrintOperations.CSimpleTextPrint">
+		<Text>{\n}{\n}</Text>
+		<Align>Center</Align>
+		<Font>
+			<Name>Arial</Name>
+			<Size>8</Size>
+			<Style>Bold</Style>
+		</Font>
+	</Operation>
+
+	<Operation Type="SH.PrintLib.PrintOperations.CPrintLine">
+	<Thickness>2</Thickness>
+	<Spacing>2</Spacing>
+	</Operation>
+
+
+<Operation Type="SH.PrintLib.PrintOperations.CSimpleTextPrint">
+	<Text>{CUSTOM_PHONE}</Text>
+	<Align>Center</Align>
+	<Font>
+		<Name>Arial</Name>
+		<Size>8</Size>
+		<Style>Bold</Style>
+	</Font>
+</Operation>
+
+<Operation Type="SH.PrintLib.PrintOperations.CSimpleTextPrint">
+	<Text>{CUSTOM_EMAIL}</Text>
+	<Align>Center</Align>
+	<Font>
+		<Name>Arial</Name>
+		<Size>8</Size>
+		<Style>Bold</Style>
+	</Font>
+</Operation>
+
+<Operation Type="SH.PrintLib.PrintOperations.CSimpleTextPrint">
+	<Text>{ORDER_VALUES}</Text>
+	<Align>Center</Align>
+	<Font>
+		<Name>Arial</Name>
+		<Size>8</Size>
+		<Style>Bold</Style>
+	</Font>
+</Operation>
+
+<Operation Type="SH.PrintLib.PrintOperations.CSimpleTextPrint">
+	<Text>{ORDER_DELIMITER}</Text>
+	<Align>Center</Align>
+	<Font>
+		<Name>Arial</Name>
+		<Size>8</Size>
+		<Style>Bold</Style>
+	</Font>
+</Operation>
+
+	<Operation Type="SH.PrintLib.PrintOperations.CPrintLine">
+		<Thickness>2</Thickness>
+		<Spacing>2</Spacing>
+	</Operation>
+
+	<Operation Type="SH.PrintLib.PrintOperations.CSimpleTextPrint">
+		<Text>{\n}{\n}</Text>
+		<Align>Center</Align>
+		<Font>
+			<Name>Arial</Name>
+			<Size>8</Size>
+			<Style>Bold</Style>
+		</Font>
+	</Operation>
+
+	<Operation Type="SH.PrintLib.PrintOperations.CPrintLine">
+		<Thickness>2</Thickness>
+		<Spacing>2</Spacing>
+	</Operation>
+
+	<Operation Type="SH.PrintLib.PrintOperations.CColumnPrint">
+		<Columns>
+			<Number>4</Number>
+			<Column>
+				<Font>
+				<Name>Arial</Name>
+				<Size>8</Size>
+				<Style>Regular</Style>
+				</Font>
+				<Align>Far</Align>
+				<Width>30</Width>
+				<Line>1</Line>
+			</Column>
+			<Column>
+				<Font>
+				<Name>Arial</Name>
+				<Size>8</Size>
+				<Style>Regular</Style>
+				</Font>
+				<Align>Near</Align>
+				<Width>150</Width>
+				<Line>1</Line>
+			</Column>
+			<Column>
+				<Font>
+				<Name>Arial</Name>
+				<Size>8</Size>
+				<Style>Regular</Style>
+				</Font>
+				<Align>Far</Align>
+				<Width>90</Width>
+				<Line>2</Line>
+			</Column>
+			<Column>
+				<Font>
+				<Name>Arial</Name>
+				<Size>8</Size>
+				<Style>Regular</Style>
+				</Font>
+				<Align>Far</Align>
+				<Width>90</Width>
+				<Line>2</Line>
+			</Column>
+		</Columns>
+		<Delimiter>{ORDER_DELIMITER}</Delimiter>
+		<Values>{ORDER_VALUES}</Values>
+		<LinePitch>0</LinePitch>
+	</Operation>
+
+</PrintOperations>
