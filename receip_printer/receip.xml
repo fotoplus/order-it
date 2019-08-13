@@ -2,7 +2,7 @@
 <PrintOperations xmlns="http://www.software-house.de/PrintOperations">
 
 	<Operation Type="SH.PrintLib.PrintOperations.CSimpleTextPrint">
-		<Text>{ID_TERMINAL} / {HEAD_ORDERNO}{\n}{\n} {ORDER_IDFULL}</Text>
+		<Text>{ORDER_IDFULL}</Text>
 		<Align>Center</Align>
 		<Font>
 			<Name>Arial</Name>
